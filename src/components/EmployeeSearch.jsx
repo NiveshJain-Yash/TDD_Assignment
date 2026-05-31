@@ -3,18 +3,17 @@ import { useState } from "react";
 // Mock employee data simulating API response
 const MOCK_EMPLOYEES = [
   { id: 1, name: "Jaynam Sanghvi", department: "Engineering" },
-  { id: 2, name: "John Smith", department: "Marketing" },
-  { id: 3, name: "Jane Doe", department: "Human Resources" },
-  { id: 4, name: "Alice Johnson", department: "Finance" },
-  { id: 5, name: "Bob Williams", department: "Engineering" },
+  { id: 2, name: "Nivesh Jain", department: "Marketing" },
+  { id: 3, name: "Pankaj Sharma", department: "Human Resources" },
+  { id: 4, name: "John Doe", department: "Finance" },
+  { id: 5, name: "Vijya Tiple", department: "Engineering" },
 ];
 
-// Simulated API call with real fetch pattern
+// Mock API call with real fetch pattern
 export async function fetchEmployee(name) {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   if (!res.ok) throw new Error("API Error");
-  const users = await res.json();
-  // Map API users to employee structure using mock department data
+  await res.json();
   const matched = MOCK_EMPLOYEES.find((e) =>
     e.name.toLowerCase().includes(name.toLowerCase())
   );
