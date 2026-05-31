@@ -3,7 +3,7 @@ import { useState } from "react";
 // Mock employee data simulating API response
 const MOCK_EMPLOYEES = [
   { id: 1, name: "Jaynam Sanghvi", department: "Engineering" },
-  { id: 2, name: "Nivesh Jain", department: "Marketing" },
+  { id: 2, name: "Nivesh Jain", department: "Developer" },
   { id: 3, name: "Pankaj Sharma", department: "Human Resources" },
   { id: 4, name: "John Doe", department: "Finance" },
   { id: 5, name: "Vijya Tiple", department: "Engineering" },
